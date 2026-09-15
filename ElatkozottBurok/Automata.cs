@@ -12,7 +12,7 @@ namespace ElatkozottBurok
     
         public int KeszpenzKassza { get; private set; } = 0;
         public List<Nassolnivalo> Keszlet { get; private set; } = new List<Nassolnivalo>();
-        public bool Elakadva { get; private set; } = false;
+        public bool Elakadva { get; set; } = false;
 
         private static Random rand = new Random();
 

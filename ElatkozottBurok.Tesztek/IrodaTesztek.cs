@@ -38,7 +38,7 @@ namespace ElatkozottBurok.Tesztek
         [Test]
         public void Fejleszto_KedvencSnack_KetszeresStresszoldasEsExtraKoffein()
         {
-            var dev = new Fejleszto("Márk", Munkakor.Junior, 1000, 50, 30, "Maci Laci");
+            var dev = new Fejleszto("Márk", Munkakor.Junior, 1000, 30, 50, "Maci Laci");
             var kedvenc = new Nassolnivalo("Maci Laci", 10, 10, 200);
 
             dev.Fogyaszt(kedvenc);
@@ -53,7 +53,7 @@ namespace ElatkozottBurok.Tesztek
         public void Automata_ElakadvaAllapotban_MegnoveliAVasarloStresszet()
         {
             var automata = new Automata { Elakadva = true };
-            var dev = new Fejleszto("Péter", Munkakor.Senior, 1000, 20, 50, "Kávé");
+            var dev = new Fejleszto("Péter", Munkakor.Senior, 1000, 50, 20, "Kávé");
 
             var kapott = automata.Vasarlas("Kávé", dev);
 
@@ -66,7 +66,7 @@ namespace ElatkozottBurok.Tesztek
         {
             var automata = new Automata();
             automata.Feltolt(new List<Nassolnivalo> { new Nassolnivalo("Kávé", 20, 10, 300) });
-            var dev = new Fejleszto("Szegény Béla", Munkakor.Junior, 100, "Kávé");
+            var dev = new Fejleszto("Szegény Béla", Munkakor.Junior, 100, 20, 50, "Kávé");
 
             var kapott = automata.Vasarlas("Kávé", dev);
 

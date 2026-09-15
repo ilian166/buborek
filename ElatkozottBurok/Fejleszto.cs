@@ -82,7 +82,7 @@ namespace ElatkozottBurok
 
             if (Koffeinszint < 15)
             {
-                Console.WriteLine($"[FIGYELEM] {Nev} agya lefagyott (BlueScreen), koffeinre van szüksége!");
+                Console.WriteLine($"[FIGYELEM] {Nev} agya lefagyott, koffeinre van szüksége!");
             }
         }
 
